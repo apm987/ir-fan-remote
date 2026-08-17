@@ -13,7 +13,7 @@ Cada pulsación del mando envía dos tramas de cabecera fijas seguidas de una
 trama de datos repetida. Se ha identificado como una variante del protocolo
 F12 compatible con la familia BA5104/SC5104: cada trama contiene 3 bits de
 inicio, 2 bits de usuario y 7 bits de comando. Los seis botones están
-identificados y validados, incluido VENT OFF (`0xC10`).
+identificados y validados.
 
 ## Metodología
 
@@ -158,7 +158,6 @@ hueco final 40000 us
 1. El mando usa una variante F12 compatible con BA5104/SC5104, unidad de unos
    422 us, portadora de 38 kHz y comandos de 7 bits.
 2. Los seis botones están identificados, reproducidos y validados en irplus.
-3. VENT OFF es `110000010000` (`0xC10`).
 
 ## Siguientes pasos
 
