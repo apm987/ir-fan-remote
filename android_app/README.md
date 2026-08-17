@@ -1,6 +1,6 @@
 # MANDO para Android
 
-Aplicación Android nativa que emula el mando del extractor con los seis
+Aplicación Android nativa que emula el mando del ventilador con los seis
 códigos verificados. Usa el emisor infrarrojo integrado del teléfono mediante
 `ConsumerIrManager`; no necesita Internet, cuenta de usuario ni permisos en
 tiempo de ejecución.

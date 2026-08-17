@@ -18,6 +18,8 @@ android_app/**/build/
 *.apk
 *.aab
 *.idsig
+!releases/
+!releases/*.apk
 
 # Sistema operativo
 .DS_Store

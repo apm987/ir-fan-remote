@@ -1,11 +1,11 @@
-# ExtractorIR
+# Ventilador IR
 
 <p align="center">
-  <img src="android_app/artwork/icon-source.png" alt="Icono de ExtractorIR" width="180">
+  <img src="android_app/artwork/icon-source.png" alt="Icono de Ventilador IR" width="180">
 </p>
 
 Proyecto para capturar, decodificar y reproducir el mando infrarrojo de un
-extractor con luz y tres velocidades.
+ventilador con luz y tres velocidades.
 
 Incluye:
 
@@ -20,8 +20,8 @@ Incluye:
 
 - Arduino Pro Micro basado en ATmega32U4, alimentado por USB;
 - masa del mando unida a GND del Arduino;
-- ánodo del LED IR del mando conectado a `D2` mediante una resistencia serie de
-  10 kΩ a 47 kΩ;
+- ánodo del LED IR del mando conectado directamente a `D2`, sin resistencia
+  serie;
 - cátodo del LED IR del mando conectado a GND;
 - `D2` configurado como `INPUT`, sin `INPUT_PULLUP`.
 
@@ -70,6 +70,16 @@ reinicio o la carga.
 La aplicación de [`android_app/`](android_app/) necesita un teléfono con
 bláster IR y soporte para una portadora de 38 kHz. No usa Internet ni permisos
 de ejecución.
+
+### Descarga
+
+[Descargar la APK de la versión 1.3](releases/MANDO-v1.3.apk)
+
+### Captura de pantalla
+
+<p align="center">
+  <img src="android_app/artwork/app-screenshot.png" alt="Pantalla principal de Ventilador IR" width="360">
+</p>
 
 Requisitos: Android Studio con Android SDK 36 y JDK 17 o posterior. Desde la
 carpeta `android_app`:
