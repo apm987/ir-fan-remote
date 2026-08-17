@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MANDO</string>
+    <string name="header_title">MANDO VENTILADOR</string>
+    <string name="no_emitter_message">No se ha podido acceder al emisor IR integrado.</string>
+    <string name="frequency_unsupported_message">El emisor integrado no admite 38 kHz.</string>
+    <string name="transmission_error">Error de emisión: %1$s</string>
+    <string name="led_description">Indicador de transmisión infrarroja</string>
+    <string name="vibration_settings_description">Configurar la vibración</string>
+    <string name="vibration_settings_title">Vibración de los botones</string>
+    <string name="vibration_duration">%1$d ms</string>
+    <string name="vibration_settings_hint">Ajusta la duración. Selecciona 0 ms para desactivar la vibración.</string>
+    <string name="vibration_error">Android no ha permitido activar el motor de vibración.</string>
+    <string name="vibration_test">Probar</string>
+    <string name="save">Guardar</string>
+    <string name="cancel">Cancelar</string>
+
+    <string name="light_section">Luz</string>
+    <string name="fan_section">Ventilador</string>
+    <string name="on">Encender</string>
+    <string name="off">Apagar</string>
+    <string name="fan_one">I</string>
+    <string name="fan_two">II</string>
+    <string name="fan_three">III</string>
+    <string name="stop">Apagar ventilador</string>
+
+    <string name="light_on_description">Encender la luz</string>
+    <string name="light_off_description">Apagar la luz</string>
+    <string name="fan_one_description">Activar velocidad uno del ventilador</string>
+    <string name="fan_two_description">Activar velocidad dos del ventilador</string>
+    <string name="fan_three_description">Activar velocidad tres del ventilador</string>
+    <string name="fan_off_description">Apagar el ventilador</string>
+</resources>

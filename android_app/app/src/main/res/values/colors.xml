@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="screen_background">#101621</color>
+    <color name="button_background">#243143</color>
+    <color name="button_pressed">#304158</color>
+    <color name="button_disabled">#18212D</color>
+    <color name="light_button">#E9B949</color>
+    <color name="light_button_pressed">#F3CB70</color>
+    <color name="fan_button">#5DD5C8</color>
+    <color name="fan_button_pressed">#83E2D8</color>
+    <color name="stop_button">#E06C75</color>
+    <color name="stop_button_pressed">#EB8E95</color>
+    <color name="led_off">#531F25</color>
+    <color name="led_on">#FF3B45</color>
+    <color name="led_highlight">#FFD2D5</color>
+    <color name="accent">#5DD5C8</color>
+    <color name="text_primary">#F4F7FB</color>
+    <color name="text_secondary">#A7B4C5</color>
+    <color name="text_on_light">#20242B</color>
+    <color name="icon_background">#101621</color>
+</resources>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/screenRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    tools:ignore="MergeRootFrame">
+
+    <ScrollView
+        android:id="@+id/remoteScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:fillViewport="true"
+        android:paddingStart="24dp"
+        android:paddingTop="20dp"
+        android:paddingEnd="24dp"
+        android:paddingBottom="28dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <io.github.albert.extractorir.AutoFitTextView
+                android:id="@+id/headerTitle"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="44dp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:letterSpacing="0.08"
+                android:singleLine="true"
+                android:text="@string/header_title"
+                android:textColor="@color/accent"
+                android:textSize="24sp" />
+
+        <View
+            android:id="@+id/infraredLed"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="56dp"
+            android:background="@drawable/bg_led_off"
+            android:contentDescription="@string/led_description" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="84dp"
+            android:fontFamily="sans-serif-medium"
+            android:letterSpacing="0.1"
+            android:text="@string/light_section"
+            android:textAllCaps="true"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/buttonLightOn"
+                style="@style/RemoteButton.Light"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/light_on_description"
+                android:text="@string/on" />
+
+            <Space
+                android:layout_width="12dp"
+                android:layout_height="1dp" />
+
+            <Button
+                android:id="@+id/buttonLightOff"
+                style="@style/RemoteButton.Stop"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/light_off_description"
+                android:text="@string/off" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="34dp"
+            android:fontFamily="sans-serif-medium"
+            android:letterSpacing="0.1"
+            android:text="@string/fan_section"
+            android:textAllCaps="true"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/buttonFan1"
+                style="@style/RemoteButton.Fan"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/fan_one_description"
+                android:text="@string/fan_one" />
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="1dp" />
+
+            <Button
+                android:id="@+id/buttonFan2"
+                style="@style/RemoteButton.Fan"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/fan_two_description"
+                android:text="@string/fan_two" />
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="1dp" />
+
+            <Button
+                android:id="@+id/buttonFan3"
+                style="@style/RemoteButton.Fan"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/fan_three_description"
+                android:text="@string/fan_three" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonFanOff"
+            style="@style/RemoteButton.Stop"
+            android:layout_width="match_parent"
+            android:layout_marginTop="12dp"
+            android:contentDescription="@string/fan_off_description"
+            android:text="@string/stop" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/settingsButton"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_gravity="start|top"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/vibration_settings_description"
+        android:padding="10dp"
+        android:src="@drawable/ic_settings"
+        android:tint="@color/text_secondary" />
+</FrameLayout>

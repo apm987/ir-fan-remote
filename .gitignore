@@ -1,0 +1,24 @@
+# Material de pruebas y versiones archivadas (no publicar).
+.obsoleto/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Arduino / IDE
+.arduino15/
+*.hex
+*.elf
+
+# Android / Gradle
+android_app/.gradle/
+android_app/.idea/
+android_app/local.properties
+android_app/**/build/
+*.apk
+*.aab
+*.idsig
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
