@@ -7,7 +7,7 @@ sketch filtra la portadora de aproximadamente 38 kHz y conserva la envolvente.
 
 El protocolo ha sido decodificado por completo y validado: los codigos
 generados para la configuracion final de irplus funcionan contra el
-dispositivo, un extractor con luz y tres velocidades de ventilacion.
+dispositivo, un ventilador con luz y tres velocidades.
 
 Cada pulsacion del mando envia dos tramas de cabecera fijas seguidas de una
 trama de datos repetida. Se ha identificado como una variante del protocolo

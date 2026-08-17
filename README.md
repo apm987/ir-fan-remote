@@ -25,6 +25,11 @@ Incluye:
 - cátodo del LED IR del mando conectado a GND;
 - `D2` configurado como `INPUT`, sin `INPUT_PULLUP`.
 
+> [!CAUTION]
+> La conexión directa se validó con este mando alimentado por dos pilas
+> (aproximadamente 3 V) y con masa común. No conectes a `D2` una señal que
+> supere la tensión VCC del Arduino.
+
 La conexión captura la portadora de aproximadamente 38 kHz. El sketch filtra
 esa portadora por software y conserva la envolvente de la señal.
 
@@ -89,3 +94,8 @@ carpeta `android_app`:
 ```
 
 El APK se genera en `app/build/outputs/apk/debug/app-debug.apk`.
+
+## Licencia
+
+Este proyecto se publica bajo la [licencia MIT](LICENSE), que permite usar,
+copiar, modificar y distribuir el software conservando el aviso de licencia.
